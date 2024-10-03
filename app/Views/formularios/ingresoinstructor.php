@@ -41,7 +41,7 @@
           <span class="error"> </span><br>
                
       <input type="submit" name="ingresar" value="Ingresar" style="background-color: #df7718;"><br><br>
-      <a href="<?php echo base_url('formularios/recuperar_contra')?>"> ¿Olvidaste tu contrase&ntildea? </a>
+      
   </form> <br><br><br>
 
 <?php

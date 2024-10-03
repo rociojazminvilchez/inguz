@@ -33,14 +33,12 @@ class Home extends BaseController
             $session = session();
             $session -> set($data);
             
-            return redirect()->to('inguz/index');
+            return redirect()->to('inguz/index')->with('mensaje', '¡Bienvenido nuevamente!');
         }else{
             ?>
-            <div class="alert alert-warning" role="alert" >
-                <strong>Atención:</strong> Datos incorrectos. Ingrese nuevamente
-            </div>
+            
             <?php
-           return redirect()->to('formularios/ingreso')->with('mensaje', '¡Bienvenido nuevamente!'); 
+           return redirect()->to('formularios/ingreso')->with('mensaje', 'Datos incorrectos. Ingrese nuevamente'); 
         }
     }
 
